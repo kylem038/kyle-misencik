@@ -1,0 +1,42 @@
+/* header nav */
+
+header {
+  background-color: #D6D4D3;
+  height: 79px;
+  width: auto;
+  border-bottom: 5px solid black;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  margin-left: auto;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+nav li {
+  padding: 30px;
+  font-family: 'Farsan', cursive;
+  font-size: 1.2em;
+}
+
+nav li:hover {
+  background: #333333;
+  color: #FFFFFF;
+}
+
+nav h1 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 1.5em;
+  background-size: 45px;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #4C4C4C;
+}
