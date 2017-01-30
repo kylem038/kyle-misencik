@@ -1,0 +1,20 @@
+footer {
+  font-size: 8px;
+  height: 180px;
+  width: auto;
+  background-color: #3C5F57;
+  bottom: 0;
+  padding-top: 30px;
+  border-top: 5px solid black;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 25px;
+}
