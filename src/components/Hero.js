@@ -5,7 +5,7 @@ const Hero = () => {
     <section className='home-page'>
       <a id="about"></a>
       <video className='video' autoPlay muted loop>
-        <source src="https://s3.amazonaws.com/distill-videos/videos/processed/1385/clouds_over_the_mountain_hd_stock_video.mp4.mp4" type="video/mp4"></source>
+        <source src="https://d1235ca2z646oc.cloudfront.net/videos/processed/536/273557707.mp4.mp4" type="video/mp4"></source>
       </video>
       <div className='value-prop'>
         <h2><span>Hi, I'm Kyle</span></h2>
