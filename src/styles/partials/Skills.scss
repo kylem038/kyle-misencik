@@ -1,0 +1,25 @@
+.skills-div {
+  margin: 20px 300px 20px 300px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skills-div h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.skills-tables {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-tables td {
+  text-align: left;
+  padding-right: 10px;
+}
+
+table {
+  margin: 10px;
+}
