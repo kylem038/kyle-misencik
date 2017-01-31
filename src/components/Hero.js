@@ -33,7 +33,7 @@ class Hero extends Component {
         <div className='value-prop'>
           <h2 ref={(c) => { this.one = c }}><span>Hi, I'm Kyle</span></h2>
           <h2 ref={(c) => { this.two = c }}><span>Front-End Developer & Software Engineer</span></h2>
-          <h2 ref={(c) => { this.three = c }}><span>Located In Denver, CO</span></h2>
+          <button ref={(c) => { this.three = c }}><span>Work With Me</span></button>
         </div>
       </section>
     );
