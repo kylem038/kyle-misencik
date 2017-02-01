@@ -19,7 +19,7 @@ class Nav extends Component {
           <h1 id='logo'>KM</h1>
           <ul>
             <a href="#about"><li className='navlinks'>About</li></a>
-            <a href="#testimonials"><li className='navlinks'>Skills</li></a>
+            <a href="#skills"><li className='navlinks'>Skills</li></a>
             <a href="#contact"><li className='navlinks'>Contact</li></a>
           </ul>
         </nav>
