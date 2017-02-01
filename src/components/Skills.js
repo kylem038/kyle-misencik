@@ -4,7 +4,7 @@ class Skills extends Component {
   render(){
     return(
       <div className='skills-div'>
-        <h3>Skills</h3>
+        <h3 id='skills'>Skills</h3>
         <section className='skills-tables'>
           <table>
             <tbody>
