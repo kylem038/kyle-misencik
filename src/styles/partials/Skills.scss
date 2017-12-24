@@ -1,5 +1,5 @@
 .skills-div {
-  margin: 20px 300px 20px 300px;
+  margin: 20px 22%;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -25,4 +25,15 @@
 
 table {
   margin: 10px;
+}
+
+@media (max-width: 1200px) {
+  .skills-tables {
+    flex-direction: column;
+  }
+
+  .skills-tables td {
+    font-size: 10px;
+    padding-right: 5px;
+  }
 }
