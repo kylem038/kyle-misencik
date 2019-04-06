@@ -7,7 +7,7 @@ class Hero extends Component {
     this.gsapAnimation();
   }
 
-  gsapAnimation(){
+  gsapAnimation() {
     const e1 = this.one;
     const e2 = this.two;
     const e3 = this.three;
@@ -19,15 +19,16 @@ class Hero extends Component {
         opacity: 0,
         y: 50,
         delay: 0.5,
-        ease: Power2.easeOut },
+        ease: Power2.easeOut
+      },
       0.12)
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <section className='home-page'>
         <video className='video' autoPlay muted loop>
-          <source src="https://d1235ca2z646oc.cloudfront.net/videos/processed/536/273557707.mp4.mp4" type="video/mp4"></source>
+          <source src="https://app.coverr.co/s3/mp4/Snow-motion.mp4" type="video/mp4"></source>
         </video>
         <div className='value-prop'>
           <h2 ref={(c) => { this.one = c }}><span>Hi, I'm Kyle</span></h2>
