@@ -28,7 +28,7 @@ class Hero extends Component {
     return (
       <section className='home-page'>
         <video className='video' autoPlay muted loop>
-          <source src="https://app.coverr.co/s3/mp4/Evening_breeze.mp4" type="video/mp4"></source>
+          <source src="https://wedistill.io/uploads/videos/processed/33/TheLandofaThousandIslands-HD-3.mp4.mp4" type="video/mp4"></source>
         </video>
         <div className='value-prop'>
           <h2 ref={(c) => { this.one = c }}><span>Hi, I'm Kyle</span></h2>
