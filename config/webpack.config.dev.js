@@ -108,7 +108,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
 
           // This is a feature of `babel-loader` for webpack (not Babel itself).
@@ -124,11 +124,11 @@ module.exports = {
       // in development "style" loader enables hot editing of CSS.
       {
         test: /\.css$/,
-        loader: 'style!css?importLoaders=1!postcss'
+        loader: 'style-loader'
       },
       {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        test: /\.s[ac]ss$/i,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
@@ -139,16 +139,13 @@ module.exports = {
       // "file" loader for svg
       {
         test: /\.svg$/,
-        loader: 'file',
-        query: {
-          name: 'static/media/[name].[hash:8].[ext]'
-        }
-      },
-      {
-        test: /\.(js|jsx)$/,
-        loader: 'eslint',
-        include: paths.appSrc,
+        loader: 'svg-url-loader'
       }
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   loader: 'eslint',
+      //   include: paths.appSrc,
+      // }
     ]
   },
 
@@ -161,7 +158,7 @@ module.exports = {
       inject: true,
       template: paths.appHtml,
     }),
-    new InterpolateHtmlPlugin({
+    new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
       PUBLIC_URL: publicUrl
     }),
     new PreloadWebpackPlugin({
